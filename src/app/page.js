@@ -20,7 +20,7 @@ export default function Home() {
       <main className="container mx-auto p-6 max-w-2xl">
         <section className="mb-16">
         <p className="text-gray-700">
-  I'm working on <a href="https://discus.ai/" className="underline hover:text-blue-500" target="_blank" rel="noopener noreferrer">Discus.ai</a>, an open source project to enhance AI interactions, Synthetic Text Generation, and LLM Fine-Tuning. Currently studying in the Jerome Fisher M&T Program at the University of Pennsylvania, focusing on Computer Science and Statistics.
+  I am working on <a href="https://discus.ai/" className="underline hover:text-blue-500" target="_blank" rel="noopener noreferrer">Discus.ai</a>, an open source project to enhance AI interactions, Synthetic Text Generation, and LLM Fine-Tuning. Currently studying in the Jerome Fisher M&T Program at the University of Pennsylvania, focusing on Computer Science and Statistics.
 </p>
 
           <h2 className="text-2xl font-semibold text-gray-800 mt-12 mb-4">Notable Projects</h2>
