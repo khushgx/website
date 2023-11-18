@@ -1,16 +1,29 @@
 import Link from 'next/link';
+import Image from 'next/image'
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       <header className="py-6 mt-8 container mx-auto max-w-2xl">
         <div className="flex flex-col md:flex-row items-start">
-          <div className="mb-4 md:mb-0 md:mr-4">
-            <h1 className="text-3xl font-bold text-gray-800">Khush Gupta</h1>
-            <p className="text-gray-700  mt-2">
-            is an <span className="font-bold">academic</span>, a <span className="font-bold">developer</span>, and a <span className="font-bold">builder</span>.
-            </p>
+          
+          {/* Flex container for image and name */}
+          <div className="flex items-center mb-4 md:mb-0 md:mr-4">
+            {/* Image */}
+            <div className="flex-shrink-0 mr-3">
+              <Image src="/img.png" width={120} height={150} className="rounded-full" />
+            </div>
+            {/* Name and Description */}
+            <div>
+              <h1 className="text-3xl font-bold text-gray-800">Khush Gupta</h1>
+              <p className="text-gray-700 mt-2">
+                is an <span className="font-bold">academic</span>, a <span className="font-bold">developer</span>, and a <span className="font-bold">builder</span>.
+              </p>
+            </div>
           </div>
+          {/* End of Flex container */}
+
+          {/* Rest of the code */}
           <nav className="flex space-x-4 ml-0 md:ml-auto">
             <Link href="https://drive.google.com/file/d/14kFWr9PVHWh05w4zSt5UNnTILBM4dJiZ/view?usp=sharing" className="text-lg text-gray-700 hover:text-gray-900" target="_blank">Resume</Link>
           </nav>
