@@ -53,6 +53,7 @@ export default function Home() {
               </ul>
             </p>
             <p className="text-lg mb-4">Currently, I am working on understanding how the use of filler tokens affects long-context reasoning, attention distributions, and its effect as implicit regularizers.</p>
+             <p className="text-lg mb-4">Outside of class, I help lead <Link href="https://mlrpenn.vercel.app/"> MLR@Penn </Link> and a Teaching Assitant for the Graduate Machine Learning class (CIS 5200) here at UPenn</p>
             <p className="text-lg">
               <Link href="/resume.pdf" className="text-blue-500 hover:underline">You can find my resume here</Link>
             </p>
