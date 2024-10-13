@@ -33,7 +33,9 @@ export default function Home() {
             <div className="space-y-2 text-left">
               <div><Link href="https://twitter.com/notkhushg" className="text-blue-500 hover:underline">Twitter</Link></div>
               <div><Link href="https://linkedin.com/in/khushg" className="text-blue-500 hover:underline">LinkedIn</Link></div>
+              <div><Link href="https://github.com/khushgx" className="text-blue-500 hover:underline">Github</Link></div>
               <div><a href="mailto:khushgx@gmail.com" className="text-blue-500 hover:underline">Email</a></div>
+                
             </div>
           </div>
           
