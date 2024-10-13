@@ -40,8 +40,8 @@ export default function Home() {
           {/* Description on the right, left-aligned */}
           <div className="md:w-2/3 mt-8 md:mt-0 text-left">
             <p className="text-lg mb-4">
-              Hi! I'm Khush, a student in the Jerome Fisher Program in Management and Technology at the University of Pennsylvania.
-              I'm interested in improving the efficiency of foundation models by analyzing and exploiting the structure of their internal dynamics. By cleverly employing interpretability tools and explainability techniques, I believe we can significantly reduce model resource consumption and circumvent memory requirements.
+              Hi! I&aposm Khush, a student in the Jerome Fisher Program in Management and Technology at the University of Pennsylvania.
+              I&aposm interested in improving the efficiency of foundation models by analyzing and exploiting the structure of their internal dynamics. By cleverly employing interpretability tools and explainability techniques, I believe we can significantly reduce model resource consumption and circumvent memory requirements.
             </p>
             <p className="text-lg mb-4">
               Key questions I aim to explore include:
