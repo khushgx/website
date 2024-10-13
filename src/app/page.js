@@ -1,72 +1,118 @@
+import React from 'react';
+import Head from 'next/head';
 import Link from 'next/link';
-import Image from 'next/image'
+import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white">
-      <header className="py-6 mt-8 container mx-auto max-w-2xl">
-        <div className="flex flex-col md:flex-row items-start">
-          
-          {/* Flex container for image and name */}
-          <div className="flex items-center mb-4 md:mb-0 md:mr-4">
-            {/* Image */}
-            <div className="flex-shrink-0 mr-3">
-              <Image src="/img.png" width={120} height={150} className="rounded-full" />
-            </div>
-            {/* Name and Description */}
-            <div>
-              <h1 className="text-3xl font-bold text-gray-800">Khush Gupta</h1>
-              <p className="text-gray-700 mt-2">
-                is an <span className="font-bold">academic</span>, a <span className="font-bold">developer</span>, and a <span className="font-bold">builder</span>.
-              </p>
+    <div className="min-h-screen bg-white text-black py-24">
+      <Head>
+        <title>Khush Gupta | Portfolio</title>
+        <meta name="description" content="Portfolio website of Khush Gupta" />
+        <link rel="icon" href="/favicon.ico" />
+        <style>{`
+          body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+          }
+        `}</style>
+      </Head>
+
+      <main className="container mx-auto px-4">
+        {/* Introduction Section */}
+        <section className="mb-16 flex flex-col md:flex-row items-center md:items-start">
+          {/* Headshot on the left, left-aligned */}
+          <div className="md:w-1/3 flex flex-col items-center md:items-start md:pr-8">
+            <Image
+              src="/img.png"
+              alt="Khush Gupta Headshot"
+              width={250}
+              height={250}
+              className="rounded-full border-4 border-gray-200 mb-4"
+            />
+            <h1 className="text-3xl font-bold mb-2 text-left">Khush Gupta</h1>
+            <div className="space-y-2 text-left">
+              <div><Link href="https://twitter.com/notkhushg" className="text-blue-500 hover:underline">Twitter</Link></div>
+              <div><Link href="https://linkedin.com/in/khushg" className="text-blue-500 hover:underline">LinkedIn</Link></div>
+              <div><a href="mailto:khushgx@gmail.com" className="text-blue-500 hover:underline">Email</a></div>
             </div>
           </div>
-          {/* End of Flex container */}
+          
+          {/* Description on the right, left-aligned */}
+          <div className="md:w-2/3 mt-8 md:mt-0 text-left">
+            <p className="text-lg mb-4">
+              Hi! I'm Khush, a student in the Jerome Fisher Program in Management and Technology at the University of Pennsylvania.
+              I'm interested in improving the efficiency of foundation models by analyzing and exploiting the structure of their internal dynamics. By cleverly employing interpretability tools and explainability techniques, I believe we can significantly reduce model resource consumption and circumvent memory requirements.
+            </p>
+            <p className="text-lg mb-4">
+              Key questions I aim to explore include:
+              <ul className="list-disc ml-5">
+                <li>How can we systematically reduce memory and compute without compromising model capabilities?</li>
+                <li>What hidden structures within models can be exploited to enhance their efficiency?</li>
+              </ul>
+            </p>
+            <p className="text-lg mb-4">Currently, I am working on understanding how the use of filler tokens affects long-context reasoning, attention distributions, and its effect as implicit regularizers.</p>
+            <p className="text-lg">
+              <Link href="/resume.pdf" className="text-blue-500 hover:underline">You can find my resume here</Link>
+            </p>
+          </div>
+        </section>
 
-          {/* Rest of the code */}
-          <nav className="flex space-x-4 ml-0 md:ml-auto">
-            <Link href="https://drive.google.com/file/d/14kFWr9PVHWh05w4zSt5UNnTILBM4dJiZ/view?usp=sharing" className="text-lg text-gray-700 hover:text-gray-900" target="_blank">Resume</Link>
-          </nav>
-        </div>
-      </header>
-
-      <main className="container mx-auto p-6 max-w-2xl">
+        {/* Publications Section */}
         <section className="mb-16">
-        <p className="text-gray-700">
-  I am working on <a href="https://discus.ai/" className="underline hover:text-blue-500" target="_blank" rel="noopener noreferrer">Discus.ai</a>, an open source project to enhance AI interactions, Synthetic Text Generation, and LLM Fine-Tuning. Currently studying in the Jerome Fisher M&T Program at the University of Pennsylvania, focusing on Computer Science and Statistics.
-</p>
+          <h2 className="text-2xl font-semibold mb-6">Publications</h2>
+          <div className="space-y-6">
+            <PublicationCard 
+              title="Investigating Language Model Dynamics using Meta-Tokens"
+              authors="Alok Shah, Khush Gupta, Keshav Ramji, Vedant Gaur"
+              venue="NeurIPS 2024, ATTRIB Workshop"
+            />
+            <PublicationCard 
+              title="Weak-to-Strong In-Context Optimization of Language Model Reasoning"
+              authors="Keshav Ramji, Vedant Gaur, Alok Shah, Khush Gupta,"
+              venue="NeurIPS 2024, ATTRIB Workshop"
+            />
+          </div>
+        </section>
 
-          <h2 className="text-2xl font-semibold text-gray-800 mt-12 mb-4">Notable Projects</h2>
-          <div className="grid grid-cols-1 gap-4">
-            {/* Repeat this block for each project */}
-            <div className="p-4 border rounded hover:shadow-lg transition duration-300">
-              <Link href="https://github.com/discus-labs/discus"><span className="font-semibold text-lg text-gray-800 hover:text-gray-600 cursor-pointer">Discus.ai</span></Link>
-            </div>
-            {/* End of project block */}
-
-             {/* Repeat this block for each project */}
-             <div className="p-4 border rounded hover:shadow-lg transition duration-300">
-              <Link href="https://github.com/hvnguyen57/hackharvard"><span className="font-semibold text-lg text-gray-800 hover:text-gray-600 cursor-pointer">Custom Programming Language and Compiler</span></Link>
-            </div>
-            {/* End of project block */}
-
-             {/* Repeat this block for each project */}
-             <div className="p-4 border rounded hover:shadow-lg transition duration-300">
-              <Link href="https://github.com/khushgx/cutom_programming_compiler"><span className="font-semibold text-lg text-gray-800 hover:text-gray-600 cursor-pointer">Solar Up With Us</span></Link>
-            </div>
-            {/* End of project block */}
+        {/* Software Section */}
+        <section className="mb-16">
+          <h2 className="text-2xl font-semibold mb-2">Software</h2>
+          <p className="mb-6">The following is a non-exhaustive list of open source software projects that I started or contribute to:</p>
+          <div className="space-y-6">
+            <ProjectCard
+              title="discus.ai"
+              description="An open source project to enhance AI interactions, Synthetic Text Generation, and LLM Fine-Tuning."
+              link=""
+            />
+            <ProjectCard
+              title="mlx-examples"
+              description="MLX is an array framework for machine learning research on Apple silicon, brought to you by Apple machine learning research"
+              link="/projects/compiler"
+            />
+            <ProjectCard
+              title="kan transformer"
+              description="a quick hack to redo the GPT-2 Transformer to use a KAN instead of a traditional MLP"
+              link="/projects/solar"
+            />
           </div>
         </section>
       </main>
-
-      <footer className="mt-4 py-8 container mx-auto max-w-2xl">
-        <div className="border-b-2 border-gray-200 mb-4"></div>
-        <p className="text-gray-700">
-          LinkedIn: <span className="border-b-2 border-dotted border-gray-400 ml-2 mr-2"></span><Link href="https://linkedin.com/in/khushg"><span className="text-blue-500 hover:underline">@khushg</span></Link><br />
-          GitHub: <span className="border-b-2 border-dotted border-gray-400 ml-2 mr-2"></span><Link href="https://github.com/khushgx"><span className="text-blue-500 hover:underline">@khushgx</span></Link><br />
-          Email: <span className="border-b-2 border-dotted border-gray-400 ml-2 mr-2"></span><Link href="mailto:khushgx@gmail.com"><span className="text-blue-500 hover:underline">khushgx@gmail.com</span></Link>
-        </p>
-      </footer>
     </div>
   );
 }
+
+const PublicationCard = ({ title, authors, venue }) => (
+  <div className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition duration-300">
+    <h3 className="text-xl font-semibold mb-2">{title}</h3>
+    <p className="text-sm mb-2">{authors}</p>
+    <p className="text-sm text-gray-600">{venue}</p>
+  </div>
+);
+
+const ProjectCard = ({ title, description, link }) => (
+  <div className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition duration-300">
+    <h3 className="text-xl font-semibold mb-2">{title}</h3>
+    <p className="mb-4">{description}</p>
+    {/* <Link href={link} className="text-blue-500 hover:underline">Learn More</Link> */}
+  </div>
+);
