@@ -41,39 +41,45 @@ export default function Home() {
           
           {/* Description on the right, left-aligned */}
           <div className="md:w-2/3 mt-8 md:mt-0 text-left">
-            <p className="text-lg mb-4">
-              Hi! I&apos;m Khush, a student in the Jerome Fisher Program in Management and Technology at the University of Pennsylvania.
-              I&apos;m interested in improving the efficiency of foundation models by analyzing and exploiting the structure of their internal dynamics. By cleverly employing interpretability tools and explainability techniques, I believe we can significantly reduce model resource consumption and circumvent memory requirements.
-            </p>
-            <p className="text-lg mb-4">
-              Key questions I aim to explore include:
-              <ul className="list-disc ml-5">
-                <li>How can we systematically reduce memory and compute without compromising model capabilities?</li>
-                <li>What hidden structures within models can be exploited to enhance their efficiency?</li>
-              </ul>
-            </p>
-            <p className="text-lg mb-4">Currently, I am working on understanding how the use of filler tokens affects long-context reasoning, attention distributions, and its effect as implicit regularizers.</p>
-             <p className="text-lg mb-4">Outside of class, I help lead <Link href="https://mlrpenn.vercel.app/"  className="text-blue-500 hover:underline"> MLR@Penn </Link> and am a Teaching Assistant for the Graduate Machine Learning class (CIS 5200). I&apos;m open to collaborations or talking about anything related to ML and research, so feel free to reach out!</p>
-            <p className="text-lg">
-             You can find my resume  <Link href="/resume.pdf" className="text-blue-500 hover:underline">here</Link>
-            </p>
+          
+          <p className="text-lg mb-4">
+  Hello! I am a student at the University of Pennsylvania pursuing a B.S. in Computer Science and B.S. in Business dual degree at the Jerome Fisher Program in Management and Technology (Engineering + Wharton). 
+  
+</p>
+<p className="text-lg mb-4">
+  Most recently, I was a Machine Learning Engineer Intern at Apple, where I worked with transformers and structured state-space models (SSMs) for the Ads team. Currently, I am working on GPU Profiling and Long-Context Reasoning @ Penn Machine Learning & The Distributed Systems Lab.
+</p>
+<p className="text-lg mb-4">
+  Outside of class, I help lead <Link href="https://mlrpenn.vercel.app/" className="text-blue-500 hover:underline">MLR@Penn</Link> and serve as a Teaching Assistant for the Graduate Machine Learning class here (CIS 5200). I also work with the Cypher Accelerator at UPenn, focusing on incubating early-stage AI startups.
+</p>
+<p>If you're interested in the collaborating, talking about research, or startups, feel free to reach out—I’d love to connect.</p>
+<p className="text-lg">
+  You can find my resume <Link href="/resume.pdf" className="text-blue-500 hover:underline">here</Link>.
+</p>
+
+
           </div>
         </section>
 
         {/* Publications Section */}
         <section className="mb-16">
-          <h2 className="text-2xl font-semibold mb-6">Publications</h2>
+          <h2 className="text-2xl font-semibold mb-6">Research</h2>
           <div className="space-y-6">
-            <PublicationCard 
-              title="Investigating Language Model Dynamics using Meta-Tokens"
-              authors="Alok Shah, Khush Gupta, Keshav Ramji, Vedant Gaur"
-              venue="NeurIPS 2024, ATTRIB Workshop"
-            />
-            <PublicationCard 
-              title="Weak-to-Strong In-Context Optimization of Language Model Reasoning"
-              authors="Keshav Ramji, Vedant Gaur, Alok Shah, Khush Gupta,"
-              venue="NeurIPS 2024, ATTRIB Workshop"
-            />
+            <p className="mb-6">
+              I&apos;m interested in improving the efficiency of foundation models by analyzing and exploiting the structure of their internal dynamics. By cleverly employing interpretability tools and explainability techniques, I believe we can significantly reduce model resource consumption and circumvent memory requirements. 
+            </p>
+            <div className="space-y-6">
+              <PublicationCard 
+                title="Investigating Language Model Dynamics using Meta-Tokens"
+                authors="Alok Shah, Khush Gupta, Keshav Ramji, Vedant Gaur"
+                venue="NeurIPS 2024, ATTRIB Workshop"
+              />
+              <PublicationCard 
+                title="Weak-to-Strong In-Context Optimization of Language Model Reasoning"
+                authors="Keshav Ramji, Vedant Gaur, Alok Shah, Khush Gupta,"
+                venue="NeurIPS 2024, ATTRIB Workshop"
+              />
+            </div>
           </div>
         </section>
 
