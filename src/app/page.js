@@ -52,7 +52,7 @@ export default function Home() {
 <p className="text-lg mb-4">
   Outside of class, I help lead <Link href="https://mlrpenn.vercel.app/" className="text-blue-500 hover:underline">MLR@Penn</Link> and serve as a Teaching Assistant for the Graduate Machine Learning class here (CIS 5200). I also work with the Cypher Accelerator at UPenn, focusing on incubating early-stage AI startups.
 </p>
-<p>If you&apos;re interested in the collaborating, talking about research, or startups, feel free to reach out—I’d love to connect.</p>
+<p className="text-lg mb-4">If you&apos;re interested in the collaborating, talking about research, or startups, feel free to reach out—I’d love to connect.</p>
 <p className="text-lg">
   You can find my resume <Link href="/resume.pdf" className="text-blue-500 hover:underline">here</Link>.
 </p>
