@@ -54,7 +54,7 @@ export default function Home() {
 </p>
 <p className="text-lg mb-4">If you&apos;re interested in the collaborating, talking about research, or startups, feel free to reach out—I’d love to connect.</p>
 <p className="text-lg">
-  You can find my resume <Link href="/resume.pdf" className="text-blue-500 hover:underline">here</Link>.
+  You can find my resume <Link href="/KhushGupta_RE.pdf" className="text-blue-500 hover:underline">here</Link>.
 </p>
 
 
