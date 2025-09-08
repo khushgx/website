@@ -2,20 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background-color: white; /* White background */
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Nice, readable font */
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 33, 37, 41; /* Dark gray text color */
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  body {
+    @apply bg-gray-950 text-gray-100;
   }
 }
 
-.bg-cream { background-color: #f5f5dc; }
-.text-dark-gray { color: #333333; }
-.bg-light-gray { background-color: #d3d3d3; }
+@layer utilities {
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 0.3s ease-out;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-700 rounded;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-600;
+}
+
+::selection {
+  @apply bg-blue-500/30 text-blue-200;
+}
