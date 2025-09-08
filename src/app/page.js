@@ -92,15 +92,15 @@ export default function Home() {
               {/* Right column - Bio */}
               <div className="md:col-span-2 space-y-4 text-gray-300 leading-relaxed">
                 <p>
-                  I'm currently an AI Research Intern at <a href="https://together.ai" className="text-blue-400 underline">Together AI</a>, working on inference optimization.
+                  I&apos;m currently an AI Research Intern at <a href="https://together.ai" className="text-blue-400 underline">Together AI</a>, working on inference optimization.
                   Previously, I was a Machine Learning Engineer Intern at <span className="text-gray-100">Apple</span>, 
                   where I worked with state-space models for long-horizon tasks.
                 </p>
                 
                 <p>
-                  I'm pursuing a B.S. in Computer Science, B.S. in Statistics, and M.S. in Computer Science at the University of Pennsylvania 
+                  I&apos;m pursuing a B.S. in Computer Science, B.S. in Statistics, and M.S. in Computer Science at the University of Pennsylvania 
                   through the Jerome Fisher M&T Program. 
-                  I'm a member of the <span className="text-gray-100">Efficient AI Lab</span> under Professors <a href="https://www.seas.upenn.edu/~leebcc/" className="text-blue-400 underline">Benjamin Lee</a> and <a href="https://www.cis.upenn.edu/~devietti/" className="text-blue-400 underline">Joe Devietti</a>.
+                  I&apos;m a member of the <span className="text-gray-100">Efficient AI Lab</span> under Professors <a href="https://www.seas.upenn.edu/~leebcc/" className="text-blue-400 underline">Benjamin Lee</a> and <a href="https://www.cis.upenn.edu/~devietti/" className="text-blue-400 underline">Joe Devietti</a>.
                 </p>
                 
                 <p>
@@ -203,7 +203,7 @@ export default function Home() {
           <div className="animate-fadeIn">
             <div className="space-y-6">
               <p className="text-gray-400 leading-relaxed mb-6">
-                I've had the privilege of being a Teaching Assistant for the following graduate courses at Penn:
+                I&apos;ve had the privilege of being a Teaching Assistant for the following graduate courses at Penn:
               </p>
               <div className="grid gap-4">
                 <TeachingCard
