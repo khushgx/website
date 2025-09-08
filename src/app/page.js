@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Github, Linkedin, Twitter, Mail, ExternalLink, FileText, GraduationCap } from 'lucide-react';
+import { Github, Linkedin, X, Mail, ExternalLink, FileText, GraduationCap } from 'lucide-react';
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState('about');
@@ -74,9 +74,9 @@ export default function Home() {
                     <Linkedin size={18} />
                     <span>LinkedIn</span>
                   </a>
-                  <a href="https://twitter.com/notkhushg" className="flex items-center gap-2 text-gray-400 hover:text-blue-400 transition-colors">
-                    <Twitter size={18} />
-                    <span>Twitter</span>
+                  <a href="https://x.com/khushgx" className="flex items-center gap-2 text-gray-400 hover:text-blue-400 transition-colors">
+                    <X size={18} />
+                    <span>X</span>
                   </a>
                   <a href="mailto:khushgx@gmail.com" className="flex items-center gap-2 text-gray-400 hover:text-blue-400 transition-colors">
                     <Mail size={18} />
